@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 services:
   postgres_db:
     image: postgres:15
@@ -20,7 +20,7 @@ services:
     networks:
       - javaschool
     environment:
-      LIQUIBASE_ENABLED: true
+      LIQUIBASE_ENABLED: 'true'
       DATABASE_USE: postgres
       DATASOURCE_URL: jdbc:postgresql://postgres_db:5432/postgres
       DATASOURCE_USERNAME: postgres
